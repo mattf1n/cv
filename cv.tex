@@ -1,16 +1,28 @@
 \documentclass{article}
-\usepackage{parskip}
+
+% Typography
+\usepackage{parskip, microtype}
+
+% Layout
 \usepackage[left=2.5in, right=1.2in, top=1in]{geometry}
-\usepackage[colorlinks=true]{hyperref}
 \usepackage{titlesec}
 
+% Fonts
+\usepackage[bitstream-charter]{mathdesign}
+\usepackage{XCharter}
+\usepackage[colorlinks=true]{hyperref}
+
+% Layout spec
 \titleformat{\section}[leftmargin]
 {\scshape}{\thesection}{}{}
 \titlespacing{\section}{1in}{2.5ex plus .1ex minus .2ex}{0.3in}
 \setcounter{secnumdepth}{0}
 \pagenumbering{gobble}
 
-\renewcommand\refname{Publications and preprints}
+% References -> Publications
+\renewcommand\refname{Publications}
+
+% Entry consists of left-aligned bold title, right aligned date
 \newcommand\institute[2]{\textbf{#1}\quad\hfill#2\\}
 
 \begin{document}
@@ -21,127 +33,164 @@
 
   \small
   \href{https://mattf1n.github.io}{\texttt{mattf1n.github.io}}\quad
-  \href{mailto:mattbnfin@gmail.com}{\texttt{mattbnfin@gmail.com}}
+  \href{mailto:mfinlays@usc.edu}{\texttt{mfinlays@usc.edu}}
   \bigskip
 % \end{center}
 
 \section{Education}
 
-\institute{University of Southern California}{Aug 2023--Present}
+\institute{University of Southern California (USC)}{Aug.\ 2023--Present}
 Viterbi School of Engineering \\
-Ph.D. in Computer Science, Natural Language Processing. 
+Ph.D. in Computer Science, Natural Language Processing \\
+Advised by Swabha Swayandipta and Xiang Ren.
 
-\institute{Harvard University}{Sep 2015--May 2021}
+\institute{Harvard University}{Sep.\ 2015--May 2021}
 John A. Paulson School of Engineering and Applied Sciences \\
 A.B.\ Cum Laude in Field/Highest Honors in Computer Science and Linguistics (Joint) \\ 
-GPA $3.9/4.0$.
+GPA $3.9/4.0$. \\
+Advised by Stuart Shieber and Yonatan Belinkov.
 
-\section{Research}
+\section{Experience}
 
-\institute{USC Dill Lab and INK Lab}{Aug 2023--Present}
-Ph.D. researcher advised by Swabha Swayandipta and Xiang Ren.
+\institute{UC Berkeley, Simons Institute for the Theory of Computing}{Jan.--May 2025}
+Special Year on Large Language Models and Transformers. \\
+Visiting student researcher.
 
-\institute{The Allen Institute for AI (AI2), Aristo}{Aug 2021--Jul 2023}
+\institute{Meta, Generative AI (GenAI)}{Jun.--Sep.\ 2024}
+Research intern, advised by Aasish Pappu.
+
+\institute{The Allen Institute for AI (AI2), Aristo}{Aug.\ 2021--Jul.\ 2023}
 Pre-doctoral researcher advised by Peter Clark and Ashish Sabharwal.
 
-\institute{Harvard University Computer Science}{Jan 2019--May 2021}
-Undergraduate researcher advised by Stuart Shieber and Yonatan Belinkov.
+\institute{Microsoft, Natural Language Experiences}{Jun.--Aug.\ 2020}
+Software engineering intern.
 
-\section{Awards}
-\institute{National Science Foundation}{Mar 2023}
-Graduate Research Fellowship Program (GRFP) honorable mention.
+% \institute{Hikma Health, SWE Intern}{Jun.--Aug.\ 2019}
+% Developed a mobile electronic health record system for healthcare professionals
+% working with refugees.
 
 \begin{thebibliography}{9}
-  \bibitem{curious} \href{https://arxiv.org/abs/2305.14596}{``Closing the Curious Case of Neural Text Degeneration''}\\
-    \textbf{Matthew Finlayson}, John Hewitt, Alexander Koller, Swabha Swayamdipta, and Ashish Sabharwal \\
-    ArXiv 2023.
-  \bibitem{sfc} \href{https://arxiv.org/abs/2305.14596}{``Attentiveness to Answer Choices Doesn't Always Entail High QA Accuracy.''}\\
-    Sarah Wiegreffe, \textbf{Matthew Finlayson}, Oyvind Tafjord, Peter Clark, and Ashish Sabharwal. \\
-    EMNLP 2023.
-  \bibitem{cma}
-    \href{https://aclanthology.org/2021.acl-long.144}{``Causal Analysis of
-    Syntactic Agreement Mechanisms in Neural Language Models.''}\\
-    \textbf{Matthew Finlayson},
-    Aaron Mueller,
-    Sebastian Gehrmann,
-    Stuart Shieber,
-    Tal Linzen,
-    and Yonatan Belinkov.\\
-    ACL 2021 oral presentation.
-  \bibitem{lila} \href{https://arxiv.org/abs/2210.17517}{``L\={\i}la: A Unified Benchmark for Mathematical Reasoning.''}\\
-    \textbf{Matthew Finlayson},
-    Swaroop Mishra,
-    Pan Lu,
-    Leonard Tang,
-    Sean Welleck,
-    Chitta Baral,
-    Tanmay Rajpurohit,
-    Oyvind Tafjord,
-    Ashish Sabharwal,
-    Peter Clark,
-    and Ashwin Kalyan. \\
-    EMNLP 2022.
+  \bibitem{metadecoding} \href{https://arxiv.org/abs/2406.16838}{``From Decoding to Meta-Generation: Inference-time Algorithms for Large Language~Models''} \\
+    Sean Welleck, Amanda Bertsch, Matthew Finlayson, Hailey Schoelkopf, Alex Xie, Graham Neubig, Ilia Kulikov, Zaid Harchaoui. \\
+    NeurIPS 2024 tutorial.
+  \bibitem{logits} \href{https://arxiv.org/abs/2403.09539}{``Logits of API-Protected LLMs Leak Proprietary Information''} \\
+    Matthew Finlayson,
+    Xiang Ren,
+    and Swabha Swayamdipta. \\
+    COLM 2024 main conference.
+  \bibitem{curious} \href{https://arxiv.org/abs/2310.01693}{``Closing the Curious Case of Neural Text Degeneration.''} \\
+    Matthew Finlayson,
+    John Hewitt,
+    Alexander Koller,
+    Swabha Swayamdipta,
+    and Ashish Sabharwal. \\
+    ICLR 2024 main conference.
+  \bibitem{sfc} \href{https://arxiv.org/abs/2305.14596}{``Attentiveness to Answer Choices Doesn't Always Entail High QA Accuracy.''} \\
+    Sarah~Wiegreffe, Matthew Finlayson, Oyvind Tafjord, Peter Clark, and Ashish~Sabharwal. \\
+    EMNLP 2023 main conference.
+  \bibitem{decomp}
+    \href{https://arxiv.org/abs/2210.02406}{``Decomposed Prompting: A Modular Approach for Solving Complex Tasks.''} \\
+    Tushar~Khot, Harsh Trivedi, Matthew Finlayson, 
+    Yao Fu, Kyle Richardson, Peter~Clark, and Ashish~Sabharwal. \\
+    ICLR 2023 main conference.
+  \bibitem{lila} \href{https://arxiv.org/abs/2210.17517}{``L\={\i}la: A Unified Benchmark for Mathematical Reasoning.''} \\
+    Matthew Finlayson,
+    Swaroop~Mishra,
+    Pan~Lu,
+    Leonard~Tang,
+    Sean~Welleck,
+    Chitta~Baral,
+    Tanmay~Rajpurohit,
+    Oyvind~Tafjord,
+    Ashish~Sabharwal,
+    Peter~Clark,
+    and Ashwin~Kalyan. \\
+    EMNLP 2022 main conference.
   \bibitem{regset} \href{https://arxiv.org/pdf/2204.09148.pdf}{
       ``What Makes Instruction Learning Hard?
       An Investigation and a New Challenge in a Synthetic Environment.''
     } \\
-    \textbf{Matthew Finlayson}, Kyle Richardson, Ashish Sabharwal, and Peter Clark.\\
-    EMNLP 2022 oral presentation.
-  \bibitem{decomp}
-    \href{https://arxiv.org/abs/2210.02406}{``Decomposed Prompting: A Modular Approach for Solving Complex Tasks.''}\\
-    Tushar Khot, Harsh Trivedi, \textbf{Matthew Finlayson}, 
-    Yao Fu, Kyle Richardson, Peter Clark, and Ashish Sabharwal. \\
-    ICLR 2022.
+    Matthew Finlayson, Kyle Richardson, Ashish~Sabharwal, and Peter Clark. \\
+    EMNLP 2022 main conference.
+  \bibitem{cma}
+    \href{https://aclanthology.org/2021.acl-long.144}{``Causal Analysis of
+    Syntactic Agreement Mechanisms in Neural Language Models.''} \\
+    Matthew Finlayson,
+    Aaron~Mueller,
+    Sebastian~Gehrmann,
+    Stuart~Shieber,
+    Tal~Linzen,
+    and Yonatan~Belinkov. \\
+    ACL 2021 main conference. 
 \end{thebibliography}
+
+\section{Honors}
+\institute{National Science Foundation}{Mar.\ 2023}
+Graduate Research Fellowship Program (GRFP) honorable mention.
 
 \section{Invited talks}
 
-\institute{Instituto Superior Técnico (IST) \& Unbabel Seminar}{Feb 2023}
-\textit{Comprehensively evaluating LMs as general-purpose math reasoners}
+\institute{Meta Fundamental AI Research (FAIR)}{Jul.\ 2024}
+``The state of (meta-)decoding''
 
-\institute{Seminar on Formal Languages and Neural Networks (FLaNN)}{Nov 2022}
-\textit{What can formal languages tell us about instruction learning?}
+\institute{Meta Fundamental AI Research (FAIR)}{Apr. 2024}
+\institute{\& USC Information Sciences Institute (ISI)}{}
+``How to find ChatGPT's hidden size, and other low-rank logit tricks''
 
-\institute{Allen Institute for AI (AI2)}{Sep 2022}
-\textit{A Unified Benchmark for Mathematical Reasoning}
+\institute{Carnegie Mellon University Language Technologies Institute}{Jan.\ 2024}
+``What top-p sampling has to do with the softmax bottleneck.''
 
-\section{Teaching}
+\institute{Instituto Superior Técnico (IST) \& Unbabel Seminar}{Feb.\ 2023}
+``Comprehensively evaluating LMs as general-purpose math reasoners''
 
-\textbf{Harvard School of Engineering and Applied Sciences}
+\institute{Seminar on Formal Languages and Neural Networks (FLaNN)}{Nov.\ 2022}
+``What can formal languages tell us about instruction learning?''
 
-\institute{CS-51: Abstraction and Design in Computation}{Jan 2020--May 2021} 
-Head Teaching Fellow 
-
-\institute{CS-187: Computational Linguistics and NLP}{Sep 2019--Dec 2020} 
-Curriculum developer, Teaching Fellow 
+\institute{Allen Institute for AI (AI2)}{Sep.\ 2022}
+``A Unified Benchmark for Mathematical Reasoning''
 
 \section{Service}
 
-\institute{ACL, EMNLP, NeurIPS, MathNLP, MATH-AI, CoNLL}{2022-2023}
-Reviewing
+\institute{NeurIPS tutorial}{Dec.\ 2024}
+Co-instructor of tutorial on decoding algorithms for LLMs.
 
+\institute{Reviewer}{2022--Present}
+ARR, ACL, EMNLP, NeurIPS, ICLR, MathNLP, MATH-AI, CoNLL, COLM
 
-\section{Experience}
+\institute{Mentor}{Sep.\ 2023--Present}
+Masters students: Shahzaib Saqib Warraich \\
+Undergraduates (USC CURVE): Jacky Mo, Ryan Wang
 
-\institute{Microsoft, Natural Language Experiences, SWE Intern}{Jun--Aug 2020}
-Improved and personalized text prediction in Microsoft Office.
+\section{Teaching}
 
-\institute{Hikma Health, SWE Intern}{Jun--Aug 2019}
-Developed a mobile electronic health record system for healthcare professionals
-working with refugees.
+\institute{USC CSCI-544: Applied Natural Language Processing}{Aug.--Dec 2024} 
+Teaching Assistant 
+
+\institute{Harvard CS-51: Abstraction and Design in Computation}{Jan.\ 2020--May 2021} 
+Head Teaching Fellow 
+
+\institute{Harvard CS-187: Computational Linguistics and NLP}{Sep.\ 2019--Dec.\ 2020} 
+Curriculum developer, Teaching Fellow 
+
+\section{Software}
+\institute{\href{https://github.com/justinchiu/openlogprobs}{OpenLogProbs}}{Dec.\ 2023}
+Retrieves full-vocabulary outputs from API-protected large language models.
+
+\institute{\href{https://github.com/mattf1n/ss}{SS.py}}{Apr. 2023}
+A command-line tool for searching and citing papers through Semantic Scholar.
  
-\section{Other}
-\institute{Harvard First-Year Outdoor Program}{Aug 2018--May 2021}
-Mentored incoming first-year students on week-long backpacking trips.
+% \section{Other}
+% \institute{Harvard First-Year Outdoor Program}{Aug.\ 2018--May 2021}
+% Mentored incoming first-year students on week-long backpacking trips.
 
-\institute{Harvard Sailing Club}{Aug 2018--May 2021}
-Vice President. Taught sailing basics to beginners weekly.
+% \institute{Harvard Sailing Club}{Aug.\ 2018--May 2021}
+% Vice President. Taught sailing basics to beginners weekly.
 
-\institute{Harvard Outing Club}{Aug 2015--May 2021}
-Led regular hiking trips to improve outdoor access for Harvard affiliates.
+% % \institute{Harvard Outing Club}{Aug.\ 2015--May 2021}
+% % Led regular hiking trips to improve outdoor access for Harvard affiliates.
 
-Computer languages: Python, OCaml, few-shot prompting ;) \\
-Human languages: English, Tagalog, some Vietnamese, some Spanish.      \\
-Hobbies: birding, cycling, mechanical keyboards, sailing. 
+% Computer languages: Python, OCaml \\
+% Human languages: English, Tagalog, some Vietnamese, some Spanish.      \\
+% Hobbies: surfing, birding, cycling, ortholinear keyboards, sailing. 
 
 \end{document}
