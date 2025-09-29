@@ -5,28 +5,31 @@
 \usepackage{parskip}
 \usepackage[inline]{enumitem}
 
-\makeatletter
-\apptocmd{\@openbib@code}
-  {\setlength{\leftmargin}{0em}}
-  {}{\fail}
-\makeatother
+% \makeatletter
+% \apptocmd{\@openbib@code}
+%   {\setlength{\leftmargin}{0em}}
+%   {}{\fail}
+% \makeatother
 
 % Layout
 \usepackage[left=2.0in, right=2in, top=1in]{geometry}
 \usepackage[sc]{titlesec}
+\usepackage{titling}
 
-% \usepackage[osf]{stickstootext}
 \usepackage[colorlinks=true]{hyperref}
 
 % Fonts
 \usepackage{fontspec}
-\setmainfont{STIX Two Text}[
+\setmainfont{Libertinus Sans}[
   Numbers=OldStyle
 ]
 \newcommand{\abbrev}[1]{{\addfontfeatures{RawFeature=+c2sc}#1}}
+\newfontfamily\titlefont[]{Libertinus Serif Display}
 
 \usepackage{unicode-math}
-\setmathfont{STIX Two Math}
+\setmathfont{Libertinus Math}
+
+% \setmonofont{IBM Plex Mono}
 
 % Layout spec
 \titleformat{\section}[leftmargin]
@@ -50,7 +53,7 @@
 
 % \begin{center}
   \huge 
-  Matthew Finlayson
+  {\titlefont Matthew Finlayson}
 
   \small
   \href{https://mattf1n.github.io}{\texttt{mattf1n.github.io}}\quad
@@ -70,8 +73,8 @@ Viterbi School of Engineering
 \institute{Harvard University}{2015--2021}
 John A. Paulson School of Engineering and Applied Sciences 
 \begin{itemize*}
-  \item \abbrev{A.B.}\ Cum Laude in Field/Highest Honors in Computer Science and Linguistics (Joint)
-  \item \abbrev{GPA} 3.9 out of 4.0.
+  \item \abbrev{A.B.}\ \textit{cum laude} in field, Highest Honors in Computer Science and Linguistics (Joint)
+  \item \abbrev{GPA} 3.9 out of 4.0
   \item Advised by Stuart Shieber and Yonatan Belinkov.
 \end{itemize*}
 
@@ -112,22 +115,22 @@ Software engineering intern.
     Matthew Finlayson,
     Xiang Ren,
     and Swabha Swayamdipta. \\
-    \abbrev{COLM} 2024 main conference.
+    \abbrev{COLM} 2024.
   \bibitem{curious} \href{https://arxiv.org/abs/2310.01693}{Closing the Curious Case of Neural Text Degeneration.} \\
     Matthew Finlayson,
     John Hewitt,
     Alexander Koller,
     Swabha Swayamdipta,
     and Ashish Sabharwal. \\
-    \abbrev{ICLR} 2024 main conference.
+    \abbrev{ICLR} 2024.
   \bibitem{sfc} \href{https://arxiv.org/abs/2305.14596}{Attentiveness to Answer Choices Doesn't Always Entail High \abbrev{QA} Accuracy.} \\
     Sarah~Wiegreffe, Matthew Finlayson, Oyvind Tafjord, Peter Clark, and Ashish~Sabharwal. \\
-    \abbrev{EMNLP} 2023 main conference.
+    \abbrev{EMNLP} 2023.
   \bibitem{decomp}
     \href{https://arxiv.org/abs/2210.02406}{Decomposed Prompting: A Modular Approach for Solving Complex Tasks.} \\
     Tushar~Khot, Harsh Trivedi, Matthew Finlayson, 
     Yao Fu, Kyle Richardson, Peter~Clark, and Ashish~Sabharwal. \\
-    \abbrev{ICLR} 2023 main conference.
+    \abbrev{ICLR} 2023.
   \bibitem{lila} \href{https://arxiv.org/abs/2210.17517}{L\={\i}la: A Unified Benchmark for Mathematical Reasoning.} \\
     Matthew Finlayson,
     Swaroop~Mishra,
@@ -140,13 +143,13 @@ Software engineering intern.
     Ashish~Sabharwal,
     Peter~Clark,
     and Ashwin~Kalyan. \\
-    \abbrev{EMNLP} 2022 main conference.
+    \abbrev{EMNLP} 2022.
   \bibitem{regset} \href{https://arxiv.org/pdf/2204.09148.pdf}{
       What Makes Instruction Learning Hard?
       An Investigation and a New Challenge in a Synthetic Environment.
     } \\
     Matthew Finlayson, Kyle Richardson, Ashish~Sabharwal, and Peter Clark. \\
-    \abbrev{EMNLP} 2022 main conference.
+    \abbrev{EMNLP} 2022.
   \bibitem{cma}
     \href{https://aclanthology.org/2021.acl-long.144}{Causal Analysis of
     Syntactic Agreement Mechanisms in Neural Language Models.} \\
@@ -156,7 +159,7 @@ Software engineering intern.
     Stuart~Shieber,
     Tal~Linzen,
     and Yonatan~Belinkov. \\
-    \abbrev{ACL} 2021 main conference. 
+    \abbrev{ACL} 2021. 
 \end{thebibliography}
 
 \section{Honors}
