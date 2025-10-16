@@ -8,8 +8,9 @@
 \usepackage{titlesec}
 
 % Fonts
-\usepackage[bitstream-charter]{mathdesign}
-\usepackage{XCharter}
+% \usepackage[bitstream-charter]{mathdesign}
+% \usepackage{XCharter}
+\usepackage{fbb}
 \usepackage[colorlinks=true]{hyperref}
 
 % Layout spec
@@ -20,7 +21,7 @@
 \pagenumbering{gobble}
 
 % References -> Publications
-\renewcommand\refname{Publications}
+\renewcommand\refname{publications}
 
 % Entry consists of left-aligned bold title, right aligned date
 \newcommand\institute[2]{\textbf{#1}\quad\hfill#2\\}
@@ -37,7 +38,7 @@
   \bigskip
 % \end{center}
 
-\section{Education}
+\section{education}
 
 \institute{University of Southern California (USC)}{Aug.\ 2023--Present}
 Viterbi School of Engineering \\
@@ -50,7 +51,7 @@ A.B.\ Cum Laude in Field/Highest Honors in Computer Science and Linguistics (Joi
 GPA $3.9/4.0$. \\
 Advised by Stuart Shieber and Yonatan Belinkov.
 
-\section{Experience}
+\section{experience}
 
 \institute{UC Berkeley, Simons Institute for the Theory of Computing}{Jan.--May 2025}
 Special Year on Large Language Models and Transformers. \\
@@ -70,9 +71,18 @@ Software engineering intern.
 % working with refugees.
 
 \begin{thebibliography}{9}
+  \bibitem{better} \href{https://arxiv.org/abs/2506.17090}{``Better Language Model Inversion by Compactly Representing Next-Token Distributions''} \\
+    Murtaza Nazir, Matthew Finlayson, John X Morris, Xiang Ren, and Swabha Swayamdipta. \\
+    ArXiv 2025.
+  \bibitem{understand} \href{https://arxiv.org/abs/2505.03052}{``Teaching Models to Understand (but not Generate) High-risk Data''} \\
+    Ryan Wang, Matthew Finlayson, Luca Soldaini, Swabha Swayamdipta, Robin Jia. \\
+    COLM 2025.
+  \bibitem{rag} \href{https://arxiv.org/abs/2502.10596}{``Post-training an LLM for RAG? Train on Self-Generated Demonstrations''} \\
+    Matthew Finlayson, Ilia Kulikov, Daniel M Bikel, Barlas Oguz, Xilun Chen, and Aasish Pappu. \\
+    ArXiv 2025.
   \bibitem{metadecoding} \href{https://arxiv.org/abs/2406.16838}{``From Decoding to Meta-Generation: Inference-time Algorithms for Large Language~Models''} \\
     Sean Welleck, Amanda Bertsch, Matthew Finlayson, Hailey Schoelkopf, Alex Xie, Graham Neubig, Ilia Kulikov, Zaid Harchaoui. \\
-    NeurIPS 2024 tutorial.
+    TMLR 2024.
   \bibitem{logits} \href{https://arxiv.org/abs/2403.09539}{``Logits of API-Protected LLMs Leak Proprietary Information''} \\
     Matthew Finlayson,
     Xiang Ren,
@@ -124,11 +134,14 @@ Software engineering intern.
     ACL 2021 main conference. 
 \end{thebibliography}
 
-\section{Honors}
+\section{honors}
+\institute{National Science Foundation}{Mar.\ 2024}
+Graduate Research Fellowship Program (GRFP).
+
 \institute{National Science Foundation}{Mar.\ 2023}
 Graduate Research Fellowship Program (GRFP) honorable mention.
 
-\section{Invited talks}
+\section{invited talks}
 
 \institute{Meta Fundamental AI Research (FAIR)}{Jul.\ 2024}
 ``The state of (meta-)decoding''
@@ -149,7 +162,7 @@ Graduate Research Fellowship Program (GRFP) honorable mention.
 \institute{Allen Institute for AI (AI2)}{Sep.\ 2022}
 ``A Unified Benchmark for Mathematical Reasoning''
 
-\section{Service}
+\section{service}
 
 \institute{NeurIPS tutorial}{Dec.\ 2024}
 Co-instructor of tutorial on decoding algorithms for LLMs.
@@ -158,10 +171,11 @@ Co-instructor of tutorial on decoding algorithms for LLMs.
 ARR, ACL, EMNLP, NeurIPS, ICLR, MathNLP, MATH-AI, CoNLL, COLM
 
 \institute{Mentor}{Sep.\ 2023--Present}
+Independent: Murtaza Nazir \\
 Masters students: Shahzaib Saqib Warraich \\
 Undergraduates (USC CURVE): Jacky Mo, Ryan Wang
 
-\section{Teaching}
+\section{teaching}
 
 \institute{USC CSCI-544: Applied Natural Language Processing}{Aug.--Dec 2024} 
 Teaching Assistant 
@@ -172,7 +186,7 @@ Head Teaching Fellow
 \institute{Harvard CS-187: Computational Linguistics and NLP}{Sep.\ 2019--Dec.\ 2020} 
 Curriculum developer, Teaching Fellow 
 
-\section{Software}
+\section{software}
 \institute{\href{https://github.com/justinchiu/openlogprobs}{OpenLogProbs}}{Dec.\ 2023}
 Retrieves full-vocabulary outputs from API-protected large language models.
 
