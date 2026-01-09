@@ -28,16 +28,6 @@ jobs:
         with:
           root_file: cv.tex
           latexmk_use_lualatex: true
-          extra_packages: >
-            latexmk
-            collection-luatex
-            collection-fontsextra
-            geometry
-            titlesec
-            titling
-            hyperref
-            microtype
-            enumitem
 
       - name: Prepare Pages content
         run: |
